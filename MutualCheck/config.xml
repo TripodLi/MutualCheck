@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Config>
+  <opcitem type="1" stationcount="1" stationno="10" remark="获取PN号基础配置：stationcount表示工位的数量，type表示功能块，具体代表请参照databasemap，stationno表示工位号"  />
+  <opcitem type="2" stationcount="13" stationno="10,20,30,40,51,52,60,70,80,90,100,140,150" remark="物料校验基础配置：stationcount表示工位的数量，type表示功能块，具体代表请参照databasemap，stationno表示工位号"  />
+  <opcitem type="3" stationcount="6" stationno="10,20,30,40,51,52" remark="获取S-BOX校验基础配置：stationcount表示工位的数量，type表示功能块，具体代表请参照databasemap，stationno表示工位号"  />
+  <opcitem type="4" stationcount="6" stationno="10,20,30,40,51,52" remark="获取打包站基础配置：stationcount表示工位的数量，type表示功能块，具体代表请参照databasemap，stationno表示工位号"  />
+</Config>

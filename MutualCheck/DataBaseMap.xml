@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <DataSource    value="XH01" remark="数据库名" />
+  <UserId        value="xh" remark="登录名" />
+  <Password      value="xh" remark="登陆密码" />
+  <FunctionConfig     value="1,2,3" remark="功能配置：1.获取PN功能 2.产线物料校验功能 3.S-BOX校验功能 4.打包站校验功能 5.模组号校验功能 6.打印版本校验功能 7.获取客户编码"/>
+</Config>
