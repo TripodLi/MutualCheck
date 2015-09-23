@@ -368,5 +368,79 @@ namespace MutualCheck
                 }
             }
         }
+        /// <summary>
+        /// 根据配置获取变量DB
+        /// </summary>
+        /// <param name="feerackNo"></param>
+        /// <returns></returns>
+        public static int GetDBByConfig(string station, string order,string type)
+        {
+            string result = null;
+            XmlDocument xmlDoc = new XmlDocument();
+            string addr = "PLCADDRESSCONFIG.xml";
+            xmlDoc.Load(addr);
+            XmlNode nd;
+            nd = xmlDoc.SelectSingleNode("PLC");
+            XmlNodeList xnl = nd.ChildNodes;
+            foreach (XmlNode xn in xnl)
+            {
+                XmlElement xe = (XmlElement)xn;
+                if (xe.GetAttribute("STATION") == station && xe.GetAttribute("ORDER") == order && xe.GetAttribute("TYPE")==type)
+                {
+                    result = xe.GetAttribute("DB");
+                }
+            }
+            return Convert.ToInt32(result);
+        }
+        /// <summary>
+        /// 根据配置获取变量Address
+        /// </summary>
+        /// <param name="feerack"></param>
+        /// <param name="order"></param>
+        /// <returns></returns>
+        public static int GetAddressByConfig(string station, string order,string type)
+        {
+            string result = null;
+            XmlDocument xmlDoc = new XmlDocument();
+            string addr = "PLCADDRESSCONFIG.xml";
+            xmlDoc.Load(addr);
+            XmlNode nd;
+            nd = xmlDoc.SelectSingleNode("PLC");
+            XmlNodeList xnl = nd.ChildNodes;
+            foreach (XmlNode xn in xnl)
+            {
+                XmlElement xe = (XmlElement)xn;
+                if (xe.GetAttribute("STATION") == station && xe.GetAttribute("ORDER") == order && xe.GetAttribute("TYPE") == type)
+                {
+                    result = xe.GetAttribute("ADDRESS");
+                }
+            }
+            return Convert.ToInt32(result);
+        }
+        /// <summary>
+        /// 根据配置获取变量长度
+        /// </summary>
+        /// <param name="feerack"></param>
+        /// <param name="order"></param>
+        /// <returns></returns>
+        public static int GetLengthByConfig(string station, string order,string type)
+        {
+            string result = null;
+            XmlDocument xmlDoc = new XmlDocument();
+            string addr = "PLCADDRESSCONFIG.xml";
+            xmlDoc.Load(addr);
+            XmlNode nd;
+            nd = xmlDoc.SelectSingleNode("PLC");
+            XmlNodeList xnl = nd.ChildNodes;
+            foreach (XmlNode xn in xnl)
+            {
+                XmlElement xe = (XmlElement)xn;
+                if (xe.GetAttribute("STATION") == station && xe.GetAttribute("ORDER") == order && xe.GetAttribute("TYPE") == type)
+                {
+                    result = xe.GetAttribute("LENGTH");
+                }
+            }
+            return Convert.ToInt32(result);
+        }
     }
 }

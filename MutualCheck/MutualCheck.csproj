@@ -42,8 +42,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\项目\宁德PN校验\宁德一线软件\Job2\Job2\IOracleOperation.dll</HintPath>
     </Reference>
-    <Reference Include="MyOPC">
-      <HintPath>..\..\IntelligentRackConfiguration\IntelligentRackConfiguration\bin\Debug\MyOPC.dll</HintPath>
+    <Reference Include="MyOPC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\资料\OPCdll\从设备读取\MyOPC.dll</HintPath>
+    </Reference>
+    <Reference Include="MyPLCDataview">
+      <HintPath>..\..\..\资料\OPCdll\直接读取PLC地址块\MyPLCDataview.dll</HintPath>
     </Reference>
     <Reference Include="MySql, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
